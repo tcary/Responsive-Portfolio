@@ -15,11 +15,24 @@
     <body id="body">
         <div id="navbar" class="clearfix main">
             <h1 class="header">Tetiana Cary</h1>
-            <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
-            </nav>
+            </div>
+
+            <!-- <span onclick="openNav()"><button class="meet bouncy">Get to know me!</button></span> -->
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidebar</button>
+                <h2>Collapsed Sidebar</h2>
+                <p>Content...</p>
+            </div>
+            <!-- <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav> -->
         </div>
 
         <div class="clearfix" id="main">
@@ -90,6 +103,12 @@
                         <img class="box box-5" src="https://www.fillmurray.com/150/180" alt="placeholder"
                             class="img-thumbnail">
                         <div class="title"><a href="https://scrraper.herokuapp.com/">News Scraper</a>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <img class="box box-5" src="https://www.fillmurray.com/150/180" alt="placeholder"
+                            class="img-thumbnail">
+                        <div class="title"><a href="https://intense-atoll-97296.herokuapp.com/">Clicky App</a>
                         </div>
                     </div>
                 </div>
