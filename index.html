@@ -2,86 +2,79 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="contact.html">
-        <link rel="stylesheet" href="portfolio.html">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Kalam:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="port.css" />
+        <link rel="stylesheet" href="contact.html" />
+        <link rel="stylesheet" href="port.html" />
         <title>Portfolio</title>
     </head>
 
     <body id="body">
-        <div id="navbar" class="clearfix main">
-            <h1 class="header">Tetiana Cary</h1>
-            <nav>
+        <!-- <header>Tetiana Cary</header> -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img id="pic" src="images/IMG_6101.jpeg" alt="Picture of me" class="img-thumbnail" />
+            <a href="index.html">About</a>
+            <a href="port.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.linkedin.com/in/tetiana-cary-816047b9/"><img src="images/linkedInIcon.png"
+                    alt="Linked In Icon" style="width:25px;height:25px;"></a>
+            <a href="https://github.com/tcary"><img src="images/gitHibIcon.png" alt="GitHub icon"
+                    style="width:25px;height:25px;"></a>
+
+        </div>
+
+        <span onclick="openNav()"><button class="meet bouncy">Get to know me!</button></span>
+
+        <!-- <nav>
                 <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+            </nav> -->
+
         <div class="clearfix" id="main">
             <section class="main-section">
                 <div id="me">
-                    <h2>About Me</h2>
-                    <hr>
+                    <h2>Tetiana Cary</h2>
+                    <h2>Full Stack Developer</h2>
+                    <hr />
                 </div>
-                <img id="pic" src="images/IMG_6101.jpeg" alt="Picture of me" class="img-thumbnail" />
+                <div class="specialties">
+                    <h4>Specialties</h4>
+                    <p> HTML5, CSS3, JavaScript, jQuery, React.js</p>
+                    <p>Node.js, Express.js, Mongo DB, MySQL</p>
+                </div>
+                <h4>History</h4>
                 <p>
-                    I'm so excited about my new career path and the ability to pursue my passion for helping people
-                    in a
-                    new
-                    way! In the past I have tried different ways to make a living, but nothing has satisfied my
-                    hunger
-                    for
-                    "bigger and better me" completely. I always felt like something was missing, always thirsty for
-                    more...!
+                    I'm so excited about my new career path and the ability to pursue my
+                    passion for helping people in a new way! In the past I have tried
+                    different ways to make a living, but nothing has satisfied my hunger
+                    for "bigger and better me" completely. I always felt like something
+                    was missing, always thirsty for more...!
                 </p>
                 <p>
-                    Then a good friend of mine kept telling me about web-development and how much he enjoys it. I
-                    was
-                    curious,
-                    but so <strong>far</strong> away from being "techy". And everytime he tried to talk me into it,
-                    I
-                    was
-                    too
-                    scared to make that leap into the unknown, it's like falling out of the airplane without a
-                    parachute
-                    or
-                    driving in the car at 120mph down a steep mountain road. Well you can only imagine what it's
-                    like!
+                    Then a good friend of mine kept telling me about web-development and
+                    how much he enjoys it. I was curious, but so <strong>far</strong> away
+                    from being "techy". And everytime he tried to talk me into it, I was
+                    too scared to make that leap into the unknown, it's like falling out
+                    of the airplane without a parachute or driving in the car at 120mph
+                    down a steep mountain road. Well you can only imagine what it's like!
                 </p>
                 <p>
-                    But I finally did it, and look at me and my awesome Portfolio. Look at all of the cool staff
-                    that I
-                    know
-                    now:</p>
-                <p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Node.js</li>
-                        <li>PHP</li>
-                        <li>Laravel</li>
-                        <li>Express.js</li>
-                        <li>React.js</li>
-                        <li>Database Theory</li>
-                        <li>Mongo DB</li>
-                        <li>MySQL</li>
-                        <li>Command Line</li>
-                        <li>Git</li>
-                        <li>and more*</li>
-                    </ul>
-                    Of course thanks to a great teacher and TA's ;-)
+                    But I finally did it, and so happy! Look at
+                    all of the cool staff that I know now:
                 </p>
+
                 <footer id="foot">
                     <p class="down">Copyright</p>
                 </footer>
             </section>
         </div>
+        <script src="./app.js"></script>
     </body>
 
 </html>
