@@ -67,10 +67,11 @@ button:focus {
 #pic {
   float: left;
   margin: 20px;
+  margin-bottom: 50px;
   width: 200px;
   box-shadow: 1px 1px 2px black, 0 0 1em rgb(161, 95, 142),
     0 0 0.2em rgb(238, 46, 245);
-  height: 300px;
+  height: 275px;
 }
 
 .main-section {
@@ -123,7 +124,8 @@ h2 {
   text-align: center;
   margin-bottom: 1%;
 }
-h4 {
+
+h3 {
   font-weight: 800;
   color: rgb(28, 112, 133);
   font-size: x-large;
@@ -141,7 +143,7 @@ hr {
   border-color: black;
   border-width: 1px 0 0 0;
   border-radius: 20px;
-  width: 82%;
+  /* width: 82%; */
   margin-top: 2%;
 }
 hr:before {
@@ -276,8 +278,8 @@ img {
   height: var(--border-height);
   max-height: 250px;
   max-width: 250px;
-  height: var(--height);
-  width: var(--width);
+  /* height: var(--height); */
+  /* width: var(--width); */
   transition: transform 0.2s;
   position: absolute;
 }
@@ -385,6 +387,19 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    background: radial-gradient(mistyrose, pink);
+    height: 100%;
+    width: 100%;
+  }
+
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+
   .clipped-border {
     width: 100px;
     height: 100px;
@@ -408,13 +423,49 @@ img {
     top: 82px;
     left: 150px;
   }
-}
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
+
+  .clipped-border:nth-child(6) {
+    top: 82px;
+    left: 250px;
   }
-  .sidebar a {
-    font-size: 18px;
+
+  .clipped-border:nth-child(7) {
+    top: 82px;
+    left: 350px;
+  }
+
+  .clipped-border:nth-child(8) {
+    top: 82px;
+    left: 450px;
+  }
+
+  .clipped-border:nth-child(9) {
+    top: 0;
+    left: 400px;
+  }
+
+  .clipped-border:nth-child(10) {
+    top: 0;
+    left: 500px;
+  }
+
+  .clipped-border:nth-child(11) {
+    top: 0;
+    left: 300px;
+  }
+
+  .clipped-border:nth-child(12) {
+    top: 164px;
+    left: 0px;
+  }
+
+  .clipped-border:nth-child(13) {
+    top: 164px;
+    left: 100px;
+  }
+
+  .clipped-border:nth-child(14) {
+    top: 164px;
+    left: 200px;
   }
 }
